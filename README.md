@@ -5,8 +5,8 @@
 Bienvenido al conversor de dinero
 1. Convertir Dólar a Euro
 2. Convertir Euro a Dólar
-3. Convertir Dólar a Real 
-4. Convertir Real  a Dólar
+3. Convertir Dólar a Soles 
+4. Convertir Soles  a Dólar
 5. Convertir Dólar a Peso Chileno
 6. Convertir Peso Chileno a Dólar
 7. Salir
