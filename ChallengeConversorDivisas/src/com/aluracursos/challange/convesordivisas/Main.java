@@ -36,8 +36,8 @@ public class Main {
         System.out.println("Bienvenido al conversor de divisas");
         System.out.println("1. Convertir Dólar a Euro");
         System.out.println("2. Convertir Euro a Dólar");
-        System.out.println("3. Convertir Dólar a Real Brasileño");
-        System.out.println("4. Convertir Real Brasileño a Dólar");
+        System.out.println("3. Convertir Dólar a Soles");
+        System.out.println("4. Convertir Soles a Dólar");
         System.out.println("5. Convertir Dólar a Peso Chileno");
         System.out.println("6. Convertir Peso Chileno a Dólar");
         System.out.println("7. Salir");
