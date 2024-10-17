@@ -14,8 +14,8 @@ public class EjecutaConversiones {
         switch (opcion) {
             case 1 -> procesarConversion("USD", "EUR", scanner);
             case 2 -> procesarConversion("EUR", "USD", scanner);
-            case 3 -> procesarConversion("USD", "BRL", scanner);
-            case 4 -> procesarConversion("BRL", "USD", scanner);
+            case 3 -> procesarConversion("USD", "SOL", scanner);
+            case 4 -> procesarConversion("SOL", "USD", scanner);
             case 5 -> procesarConversion("USD", "CLP", scanner);
             case 6 -> procesarConversion("CLP", "USD", scanner);
             case 7 -> {
@@ -33,7 +33,7 @@ public class EjecutaConversiones {
         boolean entradaValida = false; // Bandera para verificar si la entrada es válida
 
         while (!entradaValida) {
-            System.out.print("Ingrese la cantidad de dinero a convertir: ");
+            System.out.print("Ingrese la cantidad de money a convertir: ");
 
             try {
                 cantidadDinero = scanner.nextDouble();
