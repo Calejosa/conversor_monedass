@@ -1,78 +1,12 @@
 # Conversor de Monedas en Java
-
-![Status](https://img.shields.io/badge/Status-Finalizado-green)
-![License](https://img.shields.io/badge/License-MIT-blue)
-![Release Date](https://img.shields.io/badge/Release-October%202024-orange)
-
-Este proyecto es un **Conversor de Monedas** implementado en Java que permite realizar conversiones de divisas en tiempo real utilizando una API de tasas de cambio. A través de una interfaz interactiva en la consola, los usuarios pueden seleccionar monedas de su interés y realizar conversiones basadas en tasas de cambio actualizadas.
-
-El proyecto fue realizado como challenge final de la formmación "Java Orientado a Objetos", impartida por Alura Latam, a través del programa One de Oracle.
-
-## Índice
-
-1. [Características Principales](#características-principales)
-2. [Tecnologías Utilizadas](#tecnologías-utilizadas)
-3. [Requisitos](#requisitos)
-4. [Instalación y Ejecución](#instalación-y-ejecución)
-5. [Uso](#uso)
-   - [Ejemplo de Ejecución](#ejemplo-de-ejecución)
-   - [Captura de JSON y Conversión](#captura-de-json-y-conversión)
-6. [Personalización y Soluciones Creativas](#personalización-y-soluciones-creativas)
-7. [Estructura del Proyecto](#estructura-del-proyecto)
-8. [Contribuciones](#contribuciones)
-9. [Licencia](#licencia)
-
-## Características Principales
-
-- **Consumo de API**: Utiliza la [Exchange Rate API](https://www.exchangerate-api.com) para obtener tasas de cambio actualizadas.
-- **Análisis de JSON**: Los datos de la API son deserializados usando la biblioteca Gson, convirtiendo el JSON en objetos Java.
-- **Interfaz de Consola**: Los usuarios interactúan a través de un menú en la consola que permite seleccionar opciones de conversión y proporcionar montos.
-- **Soluciones Creativas**: Se implementaron enfoques personalizados para la validación de entradas del usuario, mejorando la experiencia respecto a los lineamientos originales.
-
-## Tecnologías Utilizadas
-
-- **Java**: Lenguaje principal para desarrollar la lógica del conversor.
-- **HttpClient**: Para realizar solicitudes HTTP a la API de tasas de cambio.
-- **Gson**: Biblioteca para el procesamiento de datos JSON en Java.
-- **Scanner**: Para capturar las entradas de usuario en la consola.
-
-## Requisitos
-
-Antes de ejecutar el proyecto, asegúrate de tener lo siguiente:
-
-- **Java Development Kit (JDK)** versión 11 o superior.
-- **IntelliJ IDEA** u otro IDE de desarrollo Java.
-- **Biblioteca Gson**: Sigue estos pasos para agregar Gson al proyecto en IntelliJ:
-  1. Haz clic derecho en la carpeta del proyecto.
-  2. Selecciona "Open Module Settings".
-  3. Ve a la pestaña "Dependencies" y agrega Gson como biblioteca.
-
-## Instalación y Ejecución
-
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/conversor-monedas.git
-   ```
-2. Abre el proyecto en tu IDE preferido.
-3. Asegúrate de agregar la biblioteca Gson al proyecto.
-4. Obtén tu clave API en Exchange Rate API e insértala en el archivo ApiRequestResponse.java reemplazando el valor de KeyApi.
-5. Compila y ejecuta el programa.
-
-## Uso
-
-1. Al ejecutar el programa, verás un menú en la consola con las opciones de conversión de moneda.
-2. Selecciona la opción de conversión ingresando el número correspondiente.
-3. Introduce la cantidad de dinero que deseas convertir.
-4. El programa calculará y mostrará el valor convertido según la tasa actual.
-
-### Ejemplo de Ejecución
+ Ejemplo de Ejecución
 
 ```
-Bienvenido al conversor de divisas
+Bienvenido al conversor de dinero
 1. Convertir Dólar a Euro
 2. Convertir Euro a Dólar
-3. Convertir Dólar a Real Brasileño
-4. Convertir Real Brasileño a Dólar
+3. Convertir Dólar a Real 
+4. Convertir Real  a Dólar
 5. Convertir Dólar a Peso Chileno
 6. Convertir Peso Chileno a Dólar
 7. Salir
@@ -84,7 +18,7 @@ La cantidad convertida es: 85.000 EUR
 
 ### Captura de JSON y Conversión
 
-La lógica del programa para capturar la información de la API y convertir la moneda sigue los siguientes pasos:
+La lógica del programa sigue los siguientes pasos:
 
 1. **Codificar las monedas**: Antes de realizar la solicitud a la API, las monedas seleccionadas por el usuario se codifican utilizando URLEncoder.encode() para asegurar que los caracteres especiales en la URL se manejen adecuadamente.
 
@@ -149,15 +83,7 @@ El proyecto está organizado en varios paquetes y clases para mejorar la modular
 - **EjecutaConversiones**: Clase que procesa las opciones seleccionadas por el usuario y coordina las conversiones.
 - **TasaDeCambio**: Clase que modela la estructura de la respuesta JSON obtenida de la API.
 
-## Licencia
-
-Este proyecto está licenciado bajo la licencia MIT. Para más detalles, consulta el archivo LICENSE.
-
 ## Conclusión
 
-Este proyecto de conversor de monedas fue una excelente oportunidad para aplicar conocimientos en Java y trabajar con APIs externas en tiempo real. La integración de la API de tasas de cambio y la manipulación de datos JSON utilizando la biblioteca Gson me permitió profundizar en el manejo de estructuras de datos complejas y su conversión en objetos Java. 
-
-Además, implementar la lógica para convertir divisas y presentar los resultados de manera interactiva fue un desafío interesante que mejoró mis habilidades en programación orientada a objetos. Optar por soluciones creativas, como el manejo de errores en la entrada del usuario y la validación de datos, me permitió ofrecer una experiencia más fluida y robusta al usuario.
-
-Este proyecto no solo fortaleció mi comprensión de la interacción con APIs y el procesamiento de datos JSON, sino que también me ayudó a mejorar la estructura y modularidad del código en Java, con énfasis en la reutilización de componentes clave.
+Este proyecto me hizo comprender de la interacción con APIs y el procesamiento de datos JSON, también me ayudó a mejorar la estructura y modularidad del código en Java, con énfasis en la reutilización de componentes clave.
 
